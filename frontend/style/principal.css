@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    font-family: Roboto, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --primaryColor: #1a1a18;
+    --secondaryColor: #ff9505;
+}
+
+.form {
+    background-color: var(--primaryColor);
+    width: 20rem;
+    height: 20rem;
+    margin: 10px 15px;
+    border-radius: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;    
+}
+
+.container__title {
+    display: flex;
+    justify-content: center;
+    background-color: var(--secondaryColor);
+}
+.container__title__item {
+    color: var(--primaryColor);
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+/* Checar como esconder o overflow */ 
+
+.container__entrada {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 15px;    
+}
+
+.container__entrada__label {
+    color: whitesmoke;
+    padding-bottom: 5px;
+}
+
+.container__entrada__input {
+    height: 4rem;
+    border-style: solid;
+    border-color: var(--secondaryColor);
+    border-radius: 5px;
+    border-width: .5px;
+    padding-left: 5px;
+    color: var(--primaryColor);
+    outline: none;
+}
+
+.container__entrada__input::placeholder {    
+    font-size: 0.7rem;
+}
+
+.container__saida {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 15px;    
+}
+
+.container__saida__label {
+    color: whitesmoke;
+    padding-bottom: 5px;
+}
+
+.container__saida__input {
+    height: 4rem;
+    border-style: solid;
+    border-color: var(--secondaryColor);
+    border-radius: 5px;
+    border-width: .5px;
+    padding-left: 5px;
+    color: var(--primaryColor);
+    outline: none;
+}
+
+.container__buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.container__buttons__item {
+    margin: 10px 25px 5px;
+    padding: 5px 10px;
+    border-style: none;
+    border-radius: 5px;
+    background-color: var(--secondaryColor);
+    color: var(--primaryColor);
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.container__buttons__item:hover {
+    color: whitesmoke;
+}
