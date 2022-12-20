@@ -1,3 +1,7 @@
+module.exports =  function teste(){
+    console.log("chamei")
+}
+
 function saveLocalStorage(arr){
     //
     const myLocalStorage = localStorage 
@@ -18,7 +22,7 @@ function saveLocalStorage(arr){
 }
 
 function captureLocalStorage(){
-   //agr preciso ver como que o lolcastorage me retorna um valor :v 
+    
     const myLocalStorage = localStorage 
     const localStorageObject = JSON.parse(myLocalStorage.getItem('arrayDecoder'))
     return localStorageObject
