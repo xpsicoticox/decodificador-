@@ -1,4 +1,5 @@
-const teste = "Ola, seja bem vinde ao meu saite"
+const teste = "India"
+
 
 function decoderI(text) {
     const arrDecoder = [];
@@ -83,14 +84,17 @@ function juntaPalavra(arr) {
 }
 
 
-let arrayDecodificado1 = decoderA(teste);
-let arrayDecodificado2 = decoderI(arrayDecodificado1)
-let arrayDecodificado3 = decoderE(arrayDecodificado2)
-let arrayDecodificado4 = decoderU(arrayDecodificado3)
-let arrayDecodificado5 = decoderO(arrayDecodificado4)
-let palavraJunta = juntaPalavra(arrayDecodificado5);
+//let arrayDecodificado1 = decoderA(teste);
+//let arrayDecodificado2 = decoderI(arrayDecodificado1)
+//let arrayDecodificado3 = decoderE(arrayDecodificado2)
+//let arrayDecodificado4 = decoderU(arrayDecodificado3)
+//let arrayDecodificado5 = decoderO(arrayDecodificado4)
+//let palavraJunta = juntaPalavra(arrayDecodificado1);
 //console.log(arrayDecodificado);
-console.log(palavraJunta)
 
+
+
+//teste localStorage 
+saveLocalStorage("Testeee")
 
 
