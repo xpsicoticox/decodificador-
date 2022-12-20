@@ -1,7 +1,7 @@
 const teste = "India"
 
 
-function decoderI(text) {
+export  function decoderI(text) {
     const arrDecoder = [];
 
     for (let i = 0; i < text.length; i++) {
@@ -82,6 +82,7 @@ function juntaPalavra(arr) {
     }
     return palavra
 }
+
 
 
 //let arrayDecodificado1 = decoderA(teste);
