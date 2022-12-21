@@ -19,12 +19,12 @@
                     <input id="txt1" type="text" id="entradaTexto" class="container__entrada__input" placeholder="Digite aqui...">
                 </div>
                 <div class="container__buttons">
-                    <button onclick="criptografar()" class="container__buttons__item">codificar</button>
-                    <button id="botaoDescod" class="container__buttons__item">decodificar</button>
+                    <button type='button' id='botCod' onclick="criptografar()" class="container__buttons__item">codificar</button>
+                    <button type='button' id="botaoDescod" onclick="desCriptografar()" class="container__buttons__item">decodificar</button>
                 </div>
-                <div class="container__saida">
+                <div id="output" class="container__saida">
                     <label for="saidaTexto" class="container__saida__label">Resultado</label>
-                    <input id="txt2" type="text" class="container__saida__input"  >
+                    <input id="txt2" type="text" name='resultado'>
                 </div>
             </div>
         </form>
