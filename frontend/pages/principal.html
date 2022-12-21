@@ -16,19 +16,19 @@
                 </div>
                 <div class="container__entrada">
                     <label for="entradaTexto" class="container__entrada__label">Insira seu texto</label>
-                    <input type="text" id="entradaTexto" class="container__entrada__input" placeholder="Digite aqui...">
+                    <input id="txt1" type="text" id="entradaTexto" class="container__entrada__input" placeholder="Digite aqui...">
                 </div>
                 <div class="container__buttons">
-                    <button class="container__buttons__item">codificar</button>
-                    <button class="container__buttons__item">decodificar</button>
+                    <button onclick="criptografar()" class="container__buttons__item">codificar</button>
+                    <button id="botaoDescod" class="container__buttons__item">decodificar</button>
                 </div>
                 <div class="container__saida">
                     <label for="saidaTexto" class="container__saida__label">Resultado</label>
-                    <input type="text" class="container__saida__input">
+                    <input id="txt2" type="text" class="container__saida__input"  >
                 </div>
             </div>
         </form>
     </main>
-    <script src="../../backend/" ></script>     
+    <script src="../../scripts/decoder.js" ></script>     
 </body>
 </html>
