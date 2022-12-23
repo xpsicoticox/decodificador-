@@ -153,4 +153,10 @@
     .container__buttons__item {
         margin: 10px 5px 5px;
     }
+
+    .container__title__img{
+        display: none;
+    }
+
+
 }
