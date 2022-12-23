@@ -9,12 +9,21 @@
 
 :root {
     --primaryColor: #f5f5f5;
-    --secondaryColor: #0e3e5a;
-    --terciaryColor: #0a0a0a;
+    --secondaryColor: #00c2ca;
+    --terciaryColor: #e4e4e4;
+}
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0f171d;
 }
 
 .form {
-    background-color: var(--primaryColor);
+    background-color: var(--terciaryColor);
     width: 20rem;
     height: 20rem;
     margin: 10px 15px;
@@ -37,14 +46,21 @@
 .container__title {
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: var(--secondaryColor);
+}
+
+.container__title__img{
+    color: white;
+    position: relative;
+    top:2.5px;
 }
 
 .container__title__item {
     color: var(--primaryColor);
     font-weight: 800;
     text-transform: uppercase;
-    margin: 10px 0;
+    margin: 10px 10px;
 }
 
 /* Checar como esconder o overflow */
@@ -68,7 +84,7 @@
     border-width: 1.5px;
     padding: 3px 5px;
     font-size: .6rem;
-    color: var(--terciaryColor);
+    color: rgb(22, 22, 22);
     outline: none;
     resize: none;
 }
@@ -95,7 +111,8 @@
     border-radius: 5px;
     border-width: 1.5px;
     padding-left: 5px;
-    color: var(--primaryColor);
+    color: rgb(22, 22, 22);
+    background-color: white;
     outline: none;
 }
 
@@ -123,4 +140,17 @@
 .container__buttons__item:hover {
     background-color: var(--secondaryColor);
     color: var(--primaryColor);
+}
+
+
+@media (max-width: 320px) {
+    .container__buttons__item {
+        margin: 10px 15px 5px;
+    }
+}
+
+@media (max-width: 290px) {
+    .container__buttons__item {
+        margin: 10px 5px 5px;
+    }
 }
