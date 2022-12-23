@@ -22,19 +22,19 @@
                 </div>
                 <div class="container__entrada">
                     <label for="entradaTexto" class="container__entrada__label">Insira seu texto</label>
-                    <textarea id="entradaTexto" class="container__entrada__input" placeholder="Digite seu texto..."></textarea>
+                    <textarea id="entradaTexto" class="container__entrada__input" placeholder="Digite seu texto..."></textarea>                 
                 </div>
                 <div class="container__buttons">
-                    <button class="container__buttons__item">codificar</button>
-                    <button class="container__buttons__item">decodificar</button>
+                    <button type='button' id='botCod' onclick="criptografar()" class="container__buttons__item">codificar</button>
+                    <button type='button' id="botaoDescod" onclick="desCriptografar()" class="container__buttons__item">decodificar</button>
                 </div>
-                <div class="container__saida">
+                <div id="output" class="container__saida">
                     <label for="saidaTexto" class="container__saida__label">Resultado</label>
-                    <div class="container__saida__input"></div>
+                    <div class="container__saida__input"></div>                    
                 </div>
             </div>
         </form>
     </main>
-    <script src="../../backend/"></script>     
+    <script src="../../scripts/decoder.js" ></script>     
 </body>
 </html>
